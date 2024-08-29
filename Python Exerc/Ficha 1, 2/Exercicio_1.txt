@@ -1,0 +1,2 @@
+Nota = int(input('Insira a nota do teste: '))
+print ("a nota é válida" if Nota >= 0 and Nota <= 20 else "a nota está errada, pois deve estar entre 0 e 20")<= 20 else "Nota invalida")

@@ -1,0 +1,43 @@
+def Escrever(Frase):
+    try:
+        fo = open('texto.txt', 'w')
+        fo.write(Frase)
+        fo.close()
+    except:
+        print('Problema na abertuta do ficheiro e escrita do ficheiro, encerar programa')
+
+
+def Vogais(str):
+    print('Na frase existem ', str.count('a') + str.count('A'), ' a')
+    print('Na frase existem ', str.count('e') + str.count('E'), ' e')
+    print('Na frase existem ', str.count('i') + str.count('I'), ' i')
+    print('Na frase existem ', str.count('o') + str.count('O'), ' o')
+    print('Na frase existem ', str.count('u') + str.count('U'), ' u')
+
+
+def Lerfich():
+    try:
+        fo = open('texto.txt', 'r')
+        ch = fo.read()
+        fo.close()
+        return ch
+    except:
+        print('Problema na abertuta do ficheiro e leitura do ficheiro, encerar programa')
+
+def Consoantes(str):
+    Cons = ['q', 'w', 'r',  't', 'y', 'p', 's', 'd', 'f', 'g', 'h', 'j', 'k', 'l', 'z', 'x', 'c', 'v', 'b', 'n', 'm']
+    C, P = 0,1
+    for i in str:
+        if i in Cons:
+            C+=1
+        elif i == ' ':
+            P+=1
+    print("Existem ", C,"Constantes")
+    print("Existem ", P, "Palavras")
+
+
+str = input('Escreva um texto que desaja inserir no ficheiro: ')
+Escrever(str)
+Frase = Lerfich()
+Vogais(Frase)
+Consoantes(list(Frase.lower()))

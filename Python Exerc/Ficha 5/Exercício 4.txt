@@ -1,0 +1,32 @@
+n = [1,5,3,6,22,45,63,30,344,22,12,25,10]
+
+print('-----------------------------------')
+print('Esta lista tem',len(n),'numeros')
+print('-----------------------------------')
+print('O numero máximo é ',max(n),', e o numero mínimo é',min(n))
+print('-----------------------------------')
+numeros2 = [21,53,23,54,22,2,1,13]
+n += numeros2
+print(n)
+print('-----------------------------------')
+n.sort()
+print(n)
+print('-----------------------------------')
+numero = n[0]
+for i in n:
+    if n.count(numero) < n.count(i):
+        numero = i
+print('O numero mais repetido é ', numero,' e aparece pela primeira vez na posição ',n.index(numero))
+print('-----------------------------------')
+for i in n:
+    print(i, end='-')
+print('\n-----------------------------------')
+impares = 0
+for i in n:
+    if (i % 2 != 0):
+        print(i,end=' ')
+    impares += 1
+print('\n-----------------------------------')
+for i in n:
+    if i % 5 == 0:
+        print(i, end=' ')

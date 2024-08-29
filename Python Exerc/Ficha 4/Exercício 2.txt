@@ -1,0 +1,15 @@
+str = 'a amanda lisboa e o rio tejo belo encantam toda a gente'
+
+print(str[str.index('b'):])
+print('----------------------')
+print(str[:str.index('b')])
+print('----------------------')
+print('A posiçao do primeiro "a":',str.index('a'))
+print('----------------------')
+print('Nesta string existem',str.count('a'),'"a"')
+print('----------------------')
+print('Nesta string existe um total de',str.count(''),'caracters')
+print('----------------------')
+print(str.replace(' ','#'))
+print('----------------------')
+print('A string contem a palavra "tejo"?','tejo' in str)

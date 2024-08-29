@@ -1,0 +1,5 @@
+import math
+
+Raio = float(input('Digite o Raio: '))
+P = math.pi * 2 * Raio
+print('O Perimetro e de', P)

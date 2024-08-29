@@ -1,0 +1,74 @@
+#Cria uma nova base de dados
+CREATE DATABASE `NOVA_NOTA`; 
+
+#Indica qual a base de dados que quer usar
+USE  `NOVA_NOTA`; 
+
+#Criar todas as tabelas
+CREATE TABLE `Aluno` (
+    `Nome` VARCHAR (50),
+    `NºAluno` INT,
+    `Morada` VARCHAR (100),
+    `ID` INT PRIMARY KEY AUTO_INCREMENT
+);
+CREATE TABLE `Nota`(
+    `Nota da Avaliação` INT,
+    `ID` INT PRIMARY KEY AUTO_INCREMENT
+);
+CREATE TABLE `Frequenta`(
+    `IdDisciplina` INT,
+    `IdAluno` INT,
+    `IdNota` INT,
+    `IdAvaliacao` INT
+);
+CREATE TABLE `Disciplina` (
+    `Sigla` VARCHAR (20),
+    `Designacao` VARCHAR(50),
+    `IdLicenciatura` INT,
+    `ID` INT PRIMARY KEY AUTO_INCREMENT
+);
+CREATE TABLE `Licenciatura` (
+    `Sigla` VARCHAR(20),
+    `Designacao` VARCHAR(50), 
+    `IdAnoLetivo` INT,
+    `ID` int PRIMARY KEY AUTO_INCREMENT
+);
+CREATE TABLE `Ano Letivo` (
+    `Ano` VARCHAR(10),
+    `ID` int PRIMARY KEY AUTO_INCREMENT
+);
+CREATE TABLE `Avaliação` (
+    `Tipo de Avaliacao` VARCHAR (50),
+    `ID` int PRIMARY KEY AUTO_INCREMENT
+);
+
+
+
+#FINAL LIGAR AS TABELAS COM CHAVES ESTRANGEIRAS
+
+    ALTER TABLE `Frequenta` ADD FOREIGN KEY(`IdAluno`) REFERENCES `Aluno`(`ID`);
+    ALTER TABLE `Frequenta` ADD FOREIGN KEY(`IdNota`) REFERENCES `Nota`(`ID`);
+    ALTER TABLE `Frequenta` ADD FOREIGN KEY(`IdDisciplina`) REFERENCES `Disciplina`(`ID`);
+    ALTER TABLE `Frequenta` ADD FOREIGN KEY(`IdAvaliacao`) REFERENCES `Avaliacao`(`ID`);
+    ALTER TABLE `Disciplina` ADD FOREIGN KEY(`IdLicenciatura`) REFERENCES `Licenciatura`(`ID`);
+    ALTER TABLE `Licenciatura` ADD FOREIGN KEY(`IdAnoLetivo`) REFERENCES `Ano Letivo`(`ID`)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

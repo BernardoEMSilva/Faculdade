@@ -1,0 +1,44 @@
+def Escrever(Frase):
+    try:
+        fo = open('texto.txt', 'w')
+        fo.write(Frase)
+        fo.close()
+    except:
+        print('Problema na abertuta do ficheiro e escrita do ficheiro, encerar programa')
+
+
+def PalavrasUnicasFich():
+    PalavrasUnicas = []
+    FraseFinal = ''
+    ch = Lerfich()
+    try:
+        for i in ch:
+            if i not in PalavrasUnicas:
+                PalavrasUnicas.append(i)
+        return ' '.join(i for i in PalavrasUnicas)
+    except:
+        print('Problema na abertuta do ficheiro e leitura do ficheiro, encerar programa')
+
+
+def Lerfich():
+    try:
+        fo = open('texto.txt', 'r')
+        ch = fo.read()
+        ch = ch.split()
+        fo.close()
+        return ch
+    except:
+        print('Problema na abertuta do ficheiro e leitura do ficheiro, encerar programa')
+
+file_o=open('texto.txt')
+content=file_o
+file_o.close()
+
+str = input('Escreva um texto que desaja inserir no ficheiro: ')
+Escrever(str)
+Escrever(PalavrasUnicasFich())
+
+file_o=open('texto.txt', 'r')
+content=file_o.read()
+print('conteudo do ficheiro: ', content)
+file_o.close()

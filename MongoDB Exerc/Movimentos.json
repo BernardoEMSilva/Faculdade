@@ -1,0 +1,96 @@
+[{
+  "_id": {
+    "$oid": "627278ca33a14be781f9146d"
+  },
+  "Remetente": {
+    "$oid": "627277ac33a14be781f91466"
+  },
+  "Destinatario": {
+    "$oid": "6274f02533a14be781f9153a"
+  },
+  "Montante": 200,
+  "QuemFez": {
+    "$oid": "6274eab333a14be781f91500"
+  },
+  "Data": {
+    "$date": {
+      "$numberLong": "856692181000"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "6274f9d233a14be781f91603"
+  },
+  "Remetente": {
+    "$oid": "6274efa233a14be781f9152c"
+  },
+  "Destinatario": {
+    "$oid": "6274f02533a14be781f9153a"
+  },
+  "Montante": 3000,
+  "QuemFez": {
+    "$oid": "62727c1233a14be781f91478"
+  },
+  "Data": {
+    "$date": {
+      "$numberLong": "856994581000"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "6274f9dc33a14be781f91604"
+  },
+  "Remetente": {
+    "$oid": "627277ac33a14be781f91466"
+  },
+  "Destinatario": {
+    "$oid": "6274f02533a14be781f9153a"
+  },
+  "Montante": 20,
+  "QuemFez": {
+    "$oid": "6274eab333a14be781f91500"
+  },
+  "Data": {
+    "$date": {
+      "$numberLong": "856882990000"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "6274f9e933a14be781f91605"
+  },
+  "Remetente": {
+    "$oid": "6274efa233a14be781f9152c"
+  },
+  "Destinatario": {
+    "$oid": "6274f02533a14be781f9153a"
+  },
+  "Montante": 10,
+  "QuemFez": {
+    "$oid": "62727c1233a14be781f91478"
+  },
+  "Data": {
+    "$date": {
+      "$numberLong": "856199421000"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "6274f9eb33a14be781f91606"
+  },
+  "Remetente": {
+    "$oid": "6274f02533a14be781f9153a"
+  },
+  "Montante": 998,
+  "Divida": {
+    "$oid": "6274f02533a14be781f9153a"
+  },
+  "Coloborador": {
+    "$oid": "62727c1233a14be781f91478"
+  },
+  "Data": {
+    "$date": {
+      "$numberLong": "859602803000"
+    }
+  }
+}]

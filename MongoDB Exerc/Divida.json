@@ -1,0 +1,57 @@
+[{
+  "_id": {
+    "$oid": "627281b333a14be781f9148d"
+  },
+  "Valor": -500000,
+  "Utilizadores": [
+    {
+      "$oid": "6274e6e833a14be781f914ed"
+    },
+    {
+      "$oid": "626d24086702549ed8b34a12"
+    }
+  ]
+},{
+  "_id": {
+    "$oid": "6274f51633a14be781f915b3"
+  },
+  "Valor": -5000,
+  "Utilizadores": [
+    {
+      "$oid": "6274e6e833a14be781f914ed"
+    }
+  ]
+},{
+  "_id": {
+    "$oid": "6274f51933a14be781f915b4"
+  },
+  "Valor": -20000,
+  "Utilizadores": [
+    {
+      "$oid": "6274e6e833a14be781f914ed"
+    }
+  ]
+},{
+  "_id": {
+    "$oid": "6274f51b33a14be781f915b5"
+  },
+  "Valor": -1000000,
+  "Utilizadores": [
+    {
+      "$oid": "6274ea0433a14be781f914fc"
+    }
+  ]
+},{
+  "_id": {
+    "$oid": "6274f51d33a14be781f915b6"
+  },
+  "Valor": -250000,
+  "Utilizadores": [
+    {
+      "$oid": "6274e8cd33a14be781f914f4"
+    },
+    {
+      "$oid": "6274e99233a14be781f914fb"
+    }
+  ]
+}]

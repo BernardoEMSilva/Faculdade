@@ -1,0 +1,5 @@
+def Conversor(C):
+
+   return C*1.8+32
+C = float(input('Insira a temperatura em Celsius:'))
+print('A temperatura em Fahrenheit é de:', Conversor(C))

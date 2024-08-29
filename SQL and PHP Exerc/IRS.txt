@@ -1,0 +1,49 @@
+#Cria uma nova base de dados
+CREATE DATABASE `NOVA_INVESTIGADOR`; 
+
+#Indica qual a base de dados que quer usar
+USE  `NOVA_INVESTIGADOR`;
+
+#Criar todas as tabelas
+CREATE TABLE `Pessoa` (
+    `Nome` VARCHAR(50),
+    `CC` VARCHAR(50),
+    `Remuneracao` INT,
+    `idTabelaIRS` INT,
+    `idDependentes` INT,
+    `idRemuneracao` INT,
+    `id` INT PRIMARY KEY AUTO_INCREMENT
+);
+CREATE TABLE `Taxa IRS`(
+    `Taxa` INT,
+    `idTabelaIRS` INT,
+    `idDependentes` INT,
+    `idRemuneracao` INT,
+    `id` INT PRIMARY KEY AUTO_INCREMENT
+);
+CREATE TABLE `Tabela IRS`(
+    `Numero da Tabela` INT,
+    `Estado Civil` VARCHAR(50),
+    `Numero de Titulares` INT,
+    `Deficiente` INT,
+    `id` INT PRIMARY KEY AUTO_INCREMENT
+);
+CREATE TABLE `Dependentes` (
+    `Número de Dependentes` INT,
+    `id` INT PRIMARY KEY AUTO_INCREMENT
+);
+CREATE TABLE `Remuneracao` (
+    `Limite Inferior` INT,
+    `Limite Superior` INT,
+    `ID` INT PRIMARY KEY AUTO_INCREMENT
+);
+
+
+#FINAL LIGAR AS TABELAS COM CHAVES ESTRANGEIRAS
+
+    ALTER TABLE `Pessoa` ADD FOREIGN KEY (`idTabelaIRS`) REFERENCES `TabelaIRS`(`id`);
+    ALTER TABLE `Pessoa` ADD FOREIGN KEY (`idDependentes`) REFERENCES `Dependentes`(`id`);
+    ALTER TABLE `Pessoa` ADD FOREIGN KEY (`idRemuneracao`) REFERENCES `Remuneracao`(`id`);
+    ALTER TABLE `Taxa IRS` ADD FOREIGN KEY (`idTabelaIRS`) REFERENCES `TabelaIRS`(`id`);
+    ALTER TABLE `Taxa IRS` ADD FOREIGN KEY (`idDependentes`) REFERENCES `Dependentes`(`id`);
+    ALTER TABLE `Taxa IRS` ADD FOREIGN KEY (`idRemuneracao`) REFERENCES `Remuneracao`(`id`)

@@ -1,0 +1,15 @@
+str=''
+
+str = input('Digite uma frase:')
+
+a = str.count('a') + str.count('A')
+e = str.count('e') + str.count('E')
+i = str.count('i') + str.count('I')
+o = str.count('o') + str.count('O')
+u = str.count('u') + str.count('U')
+
+print('Ocorrencias da Vogal a:',a)
+print('Ocorrencias da Vogal e:',e)
+print('Ocorrencias da Vogal i:',i)
+print('Ocorrencias da Vogal o:',o)
+print('Ocorrencias da Vogal u:',u)

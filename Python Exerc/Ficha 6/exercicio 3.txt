@@ -1,0 +1,9 @@
+import math
+def Volume(Raio):
+    return (4*math.pi*math.pow(Raio, 3))/3
+
+Raio = float(input('Digite o Raio: '))
+
+print('O valor do volume e de: ', Volume(Raio),'cm cubicos')
+
+

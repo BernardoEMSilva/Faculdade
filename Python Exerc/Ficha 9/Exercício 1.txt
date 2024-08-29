@@ -1,0 +1,13 @@
+N1 = []
+N2 = []
+T1 = ()
+T2 = ()
+for i in range(5):
+    Valor = int(input('Digite um valor inteiro: '))
+    N1.append(Valor)
+    if Valor % 2 == 0:
+        N2.append(Valor)
+
+T1 = tuple(N1)
+T2 = tuple(N2)
+print(T1, T2)

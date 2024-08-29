@@ -1,0 +1,120 @@
+[{
+  "_id": {
+    "$oid": "626d24086702549ed8b34a12"
+  },
+  "Name": "Bernardo Silva",
+  "Phone": 987654321,
+  "Morada": [
+    {
+      "$oid": "626d1e256702549ed8b349f6"
+    }
+  ],
+  "DataNCS": {
+    "$date": {
+      "$numberLong": "999177721000"
+    }
+  },
+  "CC": 123456789,
+  "SegurançaSocial": {
+    "$numberLong": "12345678912"
+  },
+  "Email": "Bernas@gmail.com",
+  "Pass": "1235",
+  "Profição": "Programador"
+},{
+  "_id": {
+    "$oid": "6274e6e833a14be781f914ed"
+  },
+  "Name": "Liliana Silva",
+  "Phone": 987609871,
+  "Morada": [
+    {
+      "$oid": "626d1e256702549ed8b349f6"
+    }
+  ],
+  "DataNCS": {
+    "$date": {
+      "$numberLong": "983539321000"
+    }
+  },
+  "CC": 123459876,
+  "SegurançaSocial": {
+    "$numberLong": "12398768912"
+  },
+  "Email": "LiliS@gmail.com",
+  "Pass": "12235",
+  "Profição": "Engenheira Civil"
+},{
+  "_id": {
+    "$oid": "6274e8cd33a14be781f914f4"
+  },
+  "Name": "Luis Almeida",
+  "Phone": 921777890,
+  "Morada": [
+    {
+      "$oid": "6274e7d633a14be781f914f0"
+    }
+  ],
+  "DataNCS": {
+    "$date": {
+      "$numberLong": "1023715321000"
+    }
+  },
+  "CC": 654456789,
+  "SegurançaSocial": {
+    "$numberLong": "76545678912"
+  },
+  "Email": "Luis@gmail.com",
+  "Pass": "231235",
+  "Profição": "Treinador"
+},{
+  "_id": {
+    "$oid": "6274e99233a14be781f914fb"
+  },
+  "Name": "Carla Almeida",
+  "Phone": 921693890,
+  "Morada": [
+    {
+      "$oid": "6274e7d633a14be781f914f0"
+    }
+  ],
+  "DataNCS": {
+    "$date": {
+      "$numberLong": "951052921000"
+    }
+  },
+  "CC": 654456789,
+  "SegurançaSocial": {
+    "$numberLong": "76545678912"
+  },
+  "Email": "Carla.Almeida@gmail.com",
+  "Pass": "22331235",
+  "Profição": "Treinadora"
+},{
+  "_id": {
+    "$oid": "6274ea0433a14be781f914fc"
+  },
+  "Name": "Hugo Lopes",
+  "Phone": 926177987,
+  "Morada": [
+    {
+      "$oid": "6274e81633a14be781f914f1"
+    },
+    {
+      "$oid": "6274ea9d33a14be781f914ff"
+    },
+    {
+      "$oid": "6274eab333a14be781f91500"
+    }
+  ],
+  "DataNCS": {
+    "$date": {
+      "$numberLong": "1019827321000"
+    }
+  },
+  "CC": 657366789,
+  "SegurançaSocial": 76178912,
+  "Email": "Hugo.Lopes@gmail.com",
+  "Pass": "2235",
+  "Profição": "Programador"
+}]

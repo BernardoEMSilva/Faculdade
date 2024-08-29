@@ -1,0 +1,13 @@
+lista1 = ['Iva', 25, 'Rui', 19, 'Rato', 'abc', 33]
+
+print(lista1)
+print('---------------------------------')
+print(lista1[1:4])
+print('---------------------------------')
+print(lista1[:3])
+print('---------------------------------')
+print(lista1[3:])
+print('---------------------------------')
+lista2 = ['Ivo', 26, 'Rita', 20, 'Coelho', 'def', 34]
+lista1 += lista2
+print(lista1)

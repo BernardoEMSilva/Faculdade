@@ -1,0 +1,76 @@
+#Cria uma nova base de dados
+CREATE DATABASE `NOVA_CONTACTOS`; 
+
+#Indica qual a base de dados que quer usar
+USE  `NOVA_CONTACTOS`; 
+
+#Criar todas as tabelas
+CREATE TABLE `Grau_Academico` (
+    `Grau` VARCHAR (20),
+    `ID` INT PRIMARY KEY AUTO_INCREMENT
+);
+CREATE TABLE `Naturalidade`(
+    `Naturalidade` VARCHAR(30),
+    `ID` INT PRIMARY KEY AUTO_INCREMENT
+);
+CREATE TABLE `Investigador`(
+    `Nome` VARCHAR(50),
+    `Morada` VARCHAR(100),
+    `IdGrauAcademico` INT,
+    `IdNaturalidade` INT,
+    `ID` INT PRIMARY KEY AUTO_INCREMENT
+);
+CREATE TABLE `Investiga` (
+    `IdArea` INT,
+    `IdInvestigador` INT
+);
+CREATE TABLE `Area` (
+    `Area` VARCHAR(40),
+    `ID` INT PRIMARY KEY AUTO_INCREMENT
+);
+CREATE TABLE `Trabalhou` (
+    `Funcao` VARCHAR(10),
+    `DataInicio` DATETIME,
+    `DataFim` DATETIME,
+    `IdInvestigador` INT,
+    `IdOrganismo` INT,
+    `ID` INT PRIMARY KEY AUTO_INCREMENT
+);
+CREATE TABLE `Organismo` (
+    `Descricao` VARCHAR (100),
+    `Morada` VARCHAR(50),
+    `NIF` INT,
+    `ID` int PRIMARY KEY AUTO_INCREMENT
+);
+
+
+
+#FINAL LIGAR AS TABELAS COM CHAVES ESTRANGEIRAS
+
+    ALTER TABLE `Investigador` ADD FOREIGN KEY (`ID_Grau_Academico`) REFERENCES `Grau_Academico`(`ID`);
+    ALTER TABLE `Investigador` ADD FOREIGN KEY (`IDNaturalidade`) REFERENCES `Naturalidade`(`ID`);
+    ALTER TABLE `Investiga` ADD FOREIGN KEY (`IDArea`) REFERENCES `Área`(`ID`);
+    ALTER TABLE `Investiga` ADD FOREIGN KEY (`IDInvestigador`) REFERENCES `Investigador`(`ID`);
+    ALTER TABLE `Trabalhou` ADD FOREIGN KEY (`IDOrganismo`) REFERENCES `Organismo`(`ID`);
+    ALTER TABLE `Trabalhou` ADD FOREIGN KEY (`IDInvestigador`) REFERENCES `Investigador`(`ID`)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

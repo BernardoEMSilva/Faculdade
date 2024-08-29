@@ -1,0 +1,28 @@
+class empregado:
+    def __init__(self,_numero,_salBruto,_nome):
+        self.numero = _numero
+        self.salBruto = _salBruto
+        self.nome = _nome
+
+        if self.salBruto>= 2000.00: self.taxaIRS = 25
+        elif self.salBruto >= 1000.00 and self.salBruto<= 2000.00: self.taxaIRS  = 20
+        elif self.salBruto < 1000.00: self.taxaIRS  = 17.5
+
+        self.taxas = self.calcSS() + self.calcIRS()
+        self.salLiquido = self.calcSalLiquido()
+
+
+    def calcIRS(self):
+        return (self.salBruto*self.taxaIRS)/100
+
+    def calcSS(self):
+        return (self.salBruto * 11) / 100
+
+    def calcSalLiquido(self):
+        return self.salBruto - self.taxas
+
+emp = empregado(116389,1500,'Bernardo Silva')
+print("Salario Bruto", emp.salBruto)
+print("IRS", emp.calcIRS())
+print("SS", emp.calcSS())
+print("Salario Liquido", emp.salLiquido)

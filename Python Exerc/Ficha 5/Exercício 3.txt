@@ -1,0 +1,10 @@
+def numero(x):
+    if (x == 1):
+        return False
+    for i in range(1,x):
+        if (x%i==0 and i!=1 and i!=x ):
+            return False
+    return True
+
+x = int(input('Digite um numero: '))
+print('O valor é um numero primo?', numero(x))

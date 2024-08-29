@@ -1,0 +1,4 @@
+n1 = float(input('Digite um valor: '))
+n2 = float(input('Digite um valor: '))
+print('A media entre os dois valores e',(n1+n2)/2)
+

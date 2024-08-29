@@ -1,0 +1,2 @@
+C = float(input('Insira um valor em graus celcios a converter: '))
+print('O valor convertido e de ', C * 1.8 + 32, ' graus Fahrenheit')

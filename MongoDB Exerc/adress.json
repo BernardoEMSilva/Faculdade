@@ -1,0 +1,41 @@
+[{
+  "_id": {
+    "$oid": "626d1e256702549ed8b349f6"
+  },
+  "Rua": "Av.do parque",
+  "CodPostal": "2348-198",
+  "Distrito": "Faro",
+  "Apartamento": "4 Esquerdo B"
+},{
+  "_id": {
+    "$oid": "6274e7d633a14be781f914f0"
+  },
+  "Rua": "Av.do Conde",
+  "CodPostal": "2338-228",
+  "Distrito": "Lisboa",
+  "Apartamento": "5 Esquerdo A"
+},{
+  "_id": {
+    "$oid": "6274e81633a14be781f914f1"
+  },
+  "Rua": "Av.do Almirante Andre",
+  "CodPostal": "2333-238",
+  "Distrito": "Porto",
+  "Apartamento": "10 Esquerdo A"
+},{
+  "_id": {
+    "$oid": "6274ea9d33a14be781f914ff"
+  },
+  "Rua": "Av.do Almirante Andre",
+  "CodPostal": "2333-238",
+  "Distrito": "Porto",
+  "Apartamento": "9 Esquerdo A"
+},{
+  "_id": {
+    "$oid": "6274eab333a14be781f91500"
+  },
+  "Rua": "Av.do Almirante Andre",
+  "CodPostal": "2333-238",
+  "Distrito": "Porto",
+  "Apartamento": "8 Esquerdo A"
+}]

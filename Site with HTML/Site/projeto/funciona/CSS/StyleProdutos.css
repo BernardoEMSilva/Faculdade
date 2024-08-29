@@ -1,0 +1,198 @@
+body { /* Coloca as letras a arial e altera a cor de fundo*/
+
+    font-family: Arial;
+  }
+  a:hover{ /* Quando deixamos o rato em cima de um <a> altera a cor*/
+    color: rgb(194, 191, 191);
+}
+h1{/* coloca todos os h1 centrados*/
+  text-align: center;
+}
+section{/* coloca a section com uma margem no topo de 10% */
+  margin-top: 10%;
+}
+#Video {  /*  0px de margem de qualquer lado, largura a 100% e altura automatica para o video não ficar feio*/ 
+    margin: 0px 0px 0px 0px;
+    width: 100%;
+    height: auto;
+  }
+  #myBtn {/* Ussamos este id para alterar a estetica do botão, aqui alteramos a largura, tamanho das letras, espaço entre as letras, a borda, cor das letras, retiramos a borda, alteramos a cor de fundo, a cor do botão e o cursor do rato*/
+    width: auto;
+    font-size: 18px;
+    padding: 10px;
+    border: none;
+    background: #000;
+    color: #fff;
+    cursor: pointer;
+  }
+  #myBtn:hover {/* quando o rato estiver em cima do botão o background e a cor das letras mudam  */
+    background: #ddd;
+    color: black;
+  }
+  .bodyQ{/* o site fica a branco  */
+    background-color: #e4e4e6;
+  }
+  .bodyR{/* o site fica a cinzento escuro  */
+    background-color: #1c1e20;
+  }
+  .alinhamento{/* usamos esta class para que os selections ou os div ocuparem 90% da largura e altura automatica para que o site se adapte a qualquer tipo de ecrã*/ 
+    display: flex;/* usamos o display flex para poder organizar melhor conteudo dentro dos divs e das selections */
+    width: 90%;
+    margin: auto;/* esta margin serve para que o objeto que tiver esta class não ficar junto as bordas*/
+    margin-top: 10%;/* serve para que o objeto que tem esta class ter 10% de espaço entro ele e o objeto de */
+  }
+  .content {/* configuração do rodapé  */
+    position: fixed;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    color: #f1f1f1;
+    width: 100%;
+    padding: 20px;
+  }
+  
+  .left{/* colocar imagem a esquerda */
+   float:left;
+  }
+  .rigth{/* colocar imagem a direita */
+    float:right;
+  }
+  
+.visible{/*  serve para que a imagem volte a ficar visivel */
+  visibility: visible;
+  float: right;
+}
+.animation{/*  class para dar inicio a animação */
+  animation: drop 5s ease;
+}
+.imagec{/* centrar imagem */
+  float: 1;
+  margin-left: 10%;
+  display: flex;
+  align-items: center;
+}
+.titleW{/* titlo branco e centrado */
+  text-align: center;
+  color: white;
+}
+header{/*Estilo do cabeçalho do site*/
+  background-color:#333333;
+  border:1px solid black;
+  position: fixed;
+  width: 100%;
+  top:0%;
+  left:0%;
+
+
+}
+nav{/*Estilo do menu*/
+  flex: 2;
+}
+.header,.nada,.links{/*Estilos do cabeçalho do site*/
+  display: flex;
+  align-items: center;
+
+}
+.header{/*  esta class é ussada em alguns sitios para ajustar o tamanho e a margin   */
+  width: 90%;
+  margin:auto;
+  display: flex;
+}
+
+.divlogo{/*Estilo da div do icon do site*/
+  flex: 1;
+}
+.nada{/*Estilo da div do icon do site*/
+  flex:1;
+  display: inline;
+  align-items: center;
+}
+
+.logotipo{/*Estilo do logotipo do site*/
+  border:1px solid white;
+  width: 100px;
+  margin: 10px;
+}
+
+.Oculus{/*Estilo de cada opção do menu*/
+  font-size: 20px ;    
+  text-decoration:none;
+  color:#ababab;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.links{/*Estilo da lista para o menu do site*/
+ list-style: none;
+ justify-content:space-between; 
+}
+.topnav{/*Estilo do menu do site no modo responsivo*/
+  display: none;
+}
+.Oculus:hover{/*Estilo do menu quando e posto o rato em cima da palavra*/
+  color: rgb(194, 191, 191);
+}
+.icon{/*Estilo do icon do site*/
+  display: none;
+  color: white;
+font-size: 42px;
+float: right;
+}
+.icon:hover{/*Estilo do icon do site quando e passado com o rato em cima*/
+    color: rgb(194, 191, 191);;
+}
+@media only screen and (max-width: 768px){
+
+.visible{/* nos telemoveis não existe espaço para ter as 2 imagens dos comandos, ent temos de esconder uma delas */
+  float:left;
+  visibility: hidden;
+}
+.rotate90{/*  ussamos esta class para rodar a imagem 90 graus para assim caber melhor no telemovel  */
+  transform: rotate(-90deg);
+  
+  margin-bottom: 0%;
+}
+@media only screen and (max-width: 280px){/* reparamos que no galaxy fold não existe espaço suficiente para ter a maioria das imagens, então usamos a class visible2 para esconder algumas imagens  */
+
+  .visible2{
+    visibility: hidden;
+  }
+
+  }
+
+@keyframes drop {/*  animação da 1 imagem do site, a animação faz com que a imagem começe -80px da posição normal e deslize até a posição normal*/
+
+ 0% {
+  opacity: 0;
+  transform: translateY(-80px);
+ }
+
+ 100% {
+  opacity: 1;
+  transform: translateY(0px);
+ }
+}
+@media only screen and (max-width: 1020px){
+
+  .icon{
+      display: block;
+  }
+  .Oculus{
+      display: none;
+  }
+  .topnav{
+      display: none;
+  }
+  .links1{
+      display: none;
+      padding: 5px 40px 5px 40px;
+  }
+
+  .Oculus1{
+      font-size: 20px ;    
+      text-decoration:none;
+      color:#ababab;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
+  .Oculus1:hover{
+      color: rgb(194, 191, 191);
+  }
+}}

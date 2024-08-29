@@ -1,0 +1,9 @@
+lista = [1, 5, 3, 6, 22, 45, 63, 30, 344, 22, 12, 25, 10]
+
+print('Lista ', lista)
+lista.reverse()
+print('Lista invertida', lista)
+lista.sort()
+print('Lista Ordenada ',lista)
+
+print('Ultimos 3 membros da lista: ', lista[(len(lista)-3):])

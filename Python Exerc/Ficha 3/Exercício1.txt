@@ -1,0 +1,16 @@
+temp1 = []
+temp2 = []
+
+while (len(temp1) != 7):
+
+    valor = float(input('Insira o valor: '))
+
+    temp1.append(valor)
+
+    if valor <= 28 and valor >= 18:
+        temp2.append(valor)
+print('\nMedia de todos os valoes: ', sum(temp1)/7)
+if sum (temp2) > 0:
+    print('Media de valores entre 28 e 18:{}'.format(sum(temp2) / len(temp2)))
+else:
+    print('Sem resultados Entre 18 e 28')

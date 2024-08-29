@@ -1,0 +1,86 @@
+[{
+  "_id": {
+    "$oid": "62727c1233a14be781f91478"
+  },
+  "Nome": "Andre Faria",
+  "cc": 112236782,
+  "Datancs": {
+    "$date": {
+      "$numberLong": "632880000000"
+    }
+  },
+  "Area": "Colaborador",
+  "Perms": [
+    "Colaborador"
+  ],
+  "Email": "Andre.Faria@banco.pt",
+  "Pass": "cdsadsa1312"
+},{
+  "_id": {
+    "$oid": "6274ebb633a14be781f9150d"
+  },
+  "Nome": "Ricardo Fazeres",
+  "cc": 987236782,
+  "Datancs": {
+    "$date": {
+      "$numberLong": "632880000000"
+    }
+  },
+  "Area": "Admin de Rede",
+  "Perms": [
+    "Admin"
+  ],
+  "Email": "Ricardo@banco.pt",
+  "Pass": "cdsadsa1312"
+},{
+  "_id": {
+    "$oid": "6274ece533a14be781f9150e"
+  },
+  "Nome": "Amelia Fazeres",
+  "cc": 987258182,
+  "Datancs": {
+    "$date": {
+      "$numberLong": "701568000000"
+    }
+  },
+  "Area": "Colaborador",
+  "Perms": [
+    "Colaborador"
+  ],
+  "Email": "Amelia.Fazeres@banco.pt",
+  "Pass": "cdsadsa1312"
+},{
+  "_id": {
+    "$oid": "6274edd433a14be781f9150f"
+  },
+  "Nome": "Simao Silva",
+  "cc": 967876456,
+  "Datancs": {
+    "$date": {
+      "$numberLong": "888105600000"
+    }
+  },
+  "Area": "Estagiario de Rede",
+  "Perms": [
+    "Admin"
+  ],
+  "Email": "Simao@banco.pt",
+  "Pass": "cdsadsa1312"
+},{
+  "_id": {
+    "$oid": "6274ee5d33a14be781f91510"
+  },
+  "Nome": "Ivo Andre",
+  "cc": 123098610,
+  "Datancs": {
+    "$date": {
+      "$numberLong": "930096000000"
+    }
+  },
+  "Area": "Secretario",
+  "Perms": [
+    "Funcionario Base"
+  ],
+  "Email": "Ivo.Andre@banco.pt",
+  "Pass": "c456a1312"
+}]

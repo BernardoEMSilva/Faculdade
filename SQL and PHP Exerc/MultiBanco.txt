@@ -1,0 +1,75 @@
+#Cria uma nova base de dados
+CREATE DATABASE `NOVA_BANCO`; 
+
+#Indica qual a base de dados que quer usar
+USE  `NOVA_BANCO`;
+
+#Criar todas as tabelas
+CREATE TABLE `Banco` (
+    `designacao` varchar(50),
+    `ID` int PRIMARY KEY AUTO_INCREMENT
+);
+CREATE TABLE `Caixa/ATM`(
+    `descricao` varchar(50),
+    `ID` INT PRIMARY KEY AUTO_INCREMENT
+);
+CREATE TABLE `Transações`(
+    `NumeroTransacao` INT,
+    `DateTime` DATETIME,
+    `Montante` INT,
+    `Tipo` VARCHAR(50),
+    `IdCaixa/ATM` INT,
+    `ID` INT PRIMARY KEY AUTO_INCREMENT
+);
+CREATE TABLE `Movimento` (
+    `IDCartao` INT,
+    `IDTransacoes` INT,
+    `ID` INT PRIMARY KEY AUTO_INCREMENT
+);
+CREATE TABLE `Cartão` (
+    `IDConta` INT,
+    `LimiteMaxDiario` INT, 
+    `LimitePorMovimento` INT,
+    `ID` int PRIMARY KEY AUTO_INCREMENT
+);
+CREATE TABLE `Conta` (
+    `Saldo` INT,
+    `IDCliente` INT,
+    `ID` int PRIMARY KEY AUTO_INCREMENT
+);
+CREATE TABLE `Cliente` (
+    `Nome` VARCHAR (100),
+    `Morada` VARCHAR (100),
+    `NIF` INT,
+    `ID` int PRIMARY KEY AUTO_INCREMENT
+);
+
+
+
+#FINAL LIGAR AS TABELAS COM CHAVES ESTRANGEIRAS
+
+    ALTER TABLE `Transacoes` ADD FOREIGN KEY(`IDCaixa/ATM`) REFERENCES `Caixa/ATM` (`ID`);
+    ALTER TABLE `Movimento` ADD FOREIGN KEY(`IDCartao`) REFERENCES `Cartão` (`ID`);
+    ALTER TABLE `Movimento` ADD FOREIGN KEY(`IDTransacoes`) REFERENCES `Transacoes` (`ID`);
+    ALTER TABLE `Cartao` ADD FOREIGN KEY(`ID_Conta`) REFERENCES `Conta` (`ID`);
+    ALTER TABLE `Conta` ADD FOREIGN KEY(`ID_Cliente`) REFERENCES `Cliente` (`ID`)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,31 @@
+HorasExtra = 0.0
+SalarioBruto = 0.0
+SegurancaSocial = 0.0
+IRS = 0.0
+
+Numero = int(input('Numero do empregado: '))
+Horas = float(input('Quantas horas trabalhou: '))
+ValorHoras = float(input('Valor a hora: '))
+
+if Horas > 35:
+    HorasExtra = Horas - 35
+    Horas = 35
+
+SalarioBruto = Horas * ValorHoras + HorasExtra * (ValorHoras * 1.5)
+print('O seu salario bruto e de: ', SalarioBruto, 'euros')
+
+if SalarioBruto >= 1000:
+    IRS = SalarioBruto * 1.2 - SalarioBruto
+    print('O valor do IRS e de 20% ou seja ', IRS, 'euros')
+
+elif SalarioBruto >= 600 and SalarioBruto < 1000:
+    IRS = SalarioBruto * 1.15 - SalarioBruto < 1000
+    print('O valor do IRS e de 15% ou seja ', IRS, 'euros')
+
+else:
+    IRS = SalarioBruto * 1.1 - SalarioBruto
+    print('O valor do IRS e de 10% ou seja ', IRS, 'euros')
+
+SS = 1.11 * SalarioBruto - SalarioBruto
+print('Valor Segurança Social: ', SegurancaSocial)
+print('Salario: ', SalarioBruto - (IRS+SS))

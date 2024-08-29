@@ -1,0 +1,59 @@
+def InputString():
+    continuar = False
+    while not continuar:
+        try:
+            Val = input('Insira uma string: ')
+            continuar = True
+        except:
+            print('Error, Voltar a inserir o Valor')
+    return Val
+
+def StringToArray(arr):
+    arrRepetidas = []
+    arrFinal = []
+    for count, palavra in enumerate(arr):
+        if palavra not in arrFinal:
+            arrFinal.append(palavra)
+            arrRepetidas.append(PalavrasRepetidas(arr, palavra))
+
+    return arrFinal, arrRepetidas
+
+def PalavrasRepetidas(_Array, _Palavra):
+    arr = [_Palavra]
+    for count, palavra in enumerate(_Array):
+        if palavra == _Palavra and _Array.index(_Palavra) != count:
+            arr.append(count)
+    return arr
+
+def ReaverString(_Repetidas,_Unicas):
+    Frase = []
+    Palavra = ''
+    c2 = 0
+    for x in range(TamanhoDaFrase(_Repetidas)):
+        Palavra = AdicionarRepetidas(_Repetidas, x)
+        if Palavra == '':
+            Palavra = _Unicas[c2]
+            c2 += 1
+        Frase.append(Palavra)
+    return ' '.join(Frase)
+
+def AdicionarRepetidas(_Repetidas,Numero):
+    for i in _Repetidas:
+        if Numero in i:
+            return i[0]
+    return ''
+def TamanhoDaFrase(_Repetidas):
+    count=0
+    for i in _Repetidas:
+        for j in i:
+            count+=1
+    return count
+
+
+str = InputString()
+ArraySemRepetidas, Repetidas = StringToArray(str.split())
+del str  # destruir string
+str = ReaverString(Repetidas,ArraySemRepetidas)
+print('Palavras Repetidas: ', Repetidas)
+print('Array Sem Palavras Repetidas: ', ArraySemRepetidas)
+print('Frase recuperada:', str) 

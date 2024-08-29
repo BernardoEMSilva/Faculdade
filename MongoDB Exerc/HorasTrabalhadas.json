@@ -1,0 +1,103 @@
+[{
+  "_id": {
+    "$oid": "62727d4033a14be781f91487"
+  },
+  "Funcionario": {
+    "$oid": "6274ebb633a14be781f9150d"
+  },
+  "Entrada": {
+    "$date": {
+      "$numberLong": "1651392000000"
+    }
+  },
+  "Saida": {
+    "$date": {
+      "$numberLong": "1651407120000"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "6274f7c533a14be781f915eb"
+  },
+  "Funcionario": {
+    "$oid": "6274ebb633a14be781f9150d"
+  },
+  "Entrada": {
+    "$date": {
+      "$numberLong": "1651410000000"
+    }
+  },
+  "Saida": {
+    "$date": {
+      "$numberLong": "1651429080000"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "6274f7e333a14be781f915ec"
+  },
+  "Funcionario": {
+    "$oid": "6274ee5d33a14be781f91510"
+  },
+  "Entrada": {
+    "$date": {
+      "$numberLong": "1651392000000"
+    }
+  },
+  "Saida": {
+    "$date": {
+      "$numberLong": "1651407120000"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "6274f7ed33a14be781f915ed"
+  },
+  "Funcionario": {
+    "$oid": "6274ee5d33a14be781f91510"
+  },
+  "Entrada": {
+    "$date": {
+      "$numberLong": "1651410000000"
+    }
+  },
+  "Saida": {
+    "$date": {
+      "$numberLong": "1651429080000"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "6274f7f033a14be781f915ee"
+  },
+  "Funcionario": {
+    "$oid": "6274ebb633a14be781f9150d"
+  },
+  "Entrada": {
+    "$date": {
+      "$numberLong": "1651478400000"
+    }
+  },
+  "Saida": {
+    "$date": {
+      "$numberLong": "1651493520000"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "6274f7f233a14be781f915ef"
+  },
+  "Funcionario": {
+    "$oid": "6274edd433a14be781f9150f"
+  },
+  "Entrada": {
+    "$date": {
+      "$numberLong": "1651496400000"
+    }
+  },
+  "Saida": {
+    "$date": {
+      "$numberLong": "1651515480000"
+    }
+  }
+}]

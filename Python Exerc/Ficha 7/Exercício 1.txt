@@ -1,0 +1,13 @@
+Vector = []
+
+def Funcao(x):
+    Contador = 0
+    for i in x:
+        if i>20:
+            Contador += 1
+    return Contador
+
+for i in range(0,5):
+        Vector.append(float(input('Digite um numero: ')))
+
+print('Nos numeros acima existem ',Funcao(Vector),' maiores que 20.00')

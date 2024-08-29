@@ -1,0 +1,17 @@
+dic = {}
+dic = {'Ziggy': 'canario', 'Pluto': 'cao', 'Kitty': 'gato', 'Nemo': 'peixe', 'Mickey': 'rato'}
+
+Acabar = False
+String = ''
+
+
+while Acabar != True:
+    Nome = input('Qual o nome do seu animal? ')
+    Raca = input('Qual a espécie do seu animal? ')
+    String = input('Caso deseje continuar a inserir dados escreva "fim" caso contrario escreva qualquer valor: ')
+    dic[Nome] = Raca
+    if String == 'fim':
+        Acabar = True
+
+Pesquisar = input('Nome do animal: ')
+print(Pesquisar, '=>', dic[Pesquisar])

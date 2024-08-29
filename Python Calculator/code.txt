@@ -1,0 +1,85 @@
+def N2():
+    n1 = int(input("Digite um digito"))
+    n2 = int(input("Digite um digito"))
+
+    return n1, n2
+
+
+def N1():
+    n1 = int(input("Digite um digito"))
+    return n1
+
+
+def Op(clear):
+    if clear == True:
+        n1 = int(input("escolha um operador\n1) +\n2)-\n3)\n4)/\n5)ler historico\n6)clear\n7)sair"))
+    else:
+        n1 = int(input("escolha um operador\n1) +\n2)-\n3)\n4)/ "))
+    return n1
+
+
+def Print(n1,op,n2,res):
+    if op == 1:
+        print("resultado:", n1,"+", n2,"=", res)
+    elif op == 2:
+        print("resultado:", n1,"-", n2,"=", res)
+    elif op == 3:
+        print("resultado:", n1,"*", n2,"=", res)
+    else:
+        print("resultado:", n1,"/", n2,"=", res)
+
+
+
+def Escolha(op, n1, n2):
+    if op == 1:
+        return n1 + n2
+    elif op == 2:
+        return n1 - n2
+    elif op == 3:
+        return n1 * n2
+    else:
+        return n1 / n2
+
+
+
+historico = []
+sair = False
+n1=0.0
+n2=0.0
+result=0.0
+n1, n2 = N2()
+op = Op(False)
+result = Escolha(op, n1, n2)
+n1=result
+
+
+Print(n1,op,n2,result)
+historico.append([n1, op, n2, result])
+
+while sair != True:
+    op = Op(True)
+    if op <= 4 and op >= 1:
+        n2 = N1()
+        result = Escolha(op, n1, n2)
+        n1 = result
+
+        historico.append([n1, op, n2, result])
+        Print(n1, op, n2, result)
+
+
+    elif op == 5:
+        for i in historico:
+            Print(i[0],i[1],i[2],[3])
+
+    elif op == 6:
+        n1, n2 = N2()
+        op = Op(False)
+        result = Escolha(op, n1, n2)
+        n1 = result
+
+        historico.append([n1, op, n2, result])
+        Print(n1, op, n2, result)
+
+
+    else:
+        sair = True

@@ -1,0 +1,14 @@
+string = 'a ana e o aniceto foram ao cinema anadia'
+print(string)
+substring = input('Digite a palavra a subtituir: ')
+
+if substring in string:
+    print('Sucesso ao localizar a palavra')
+else:
+    print('A palavra nao exite na string, a finalizar o programa')
+    exit()
+
+substring2 = input('Digite a string: ')
+
+
+print(string.replace(substring, substring2))
